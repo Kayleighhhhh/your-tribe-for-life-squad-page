@@ -25,4 +25,7 @@ html {
     --font-size-m: 1.125rem;
     --font-size-s: 1rem;
     --font-size-xs: 0.875rem;
+
+    --border-radius: 5px;
+}
 }
