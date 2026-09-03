@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    /* Colors */
+    --primary-color: #245CDA;
+    --secondary-color: #41A241;
+    --text-color: #E3E3E3;
+    --accent-color: #FF5555;
+
+    /* Font sizes */
+    --font-size-xl: 1.5rem;
+    --font-size-l: 1.25rem;
+    --font-size-m: 1.125rem;
+    --font-size-s: 1rem;
+    --font-size-xs: 0.875rem;
+}
