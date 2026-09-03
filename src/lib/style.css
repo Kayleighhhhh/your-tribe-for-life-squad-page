@@ -27,7 +27,7 @@ html {
     --font-size-xs: 0.875rem;
 
     /* Layout */
-    --taskbar-height: 60px;
+    --taskbar-height: 50px;
 }
 
 body {
