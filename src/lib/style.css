@@ -60,10 +60,20 @@ ul {
 
         :hover {
             cursor: url("./src/lib/assets/link.png") 4 0, pointer;
+            background-color: rgba(0, 157, 255, 0.4);
+        }
+
+        :hover p {
+            text-shadow: 1.5px 1.5px 1.5px #000000;
+        }
+
+        :hover img {
+            padding: 1px;
         }
 
         img {
             object-fit: cover;
+            transition: all 0.1s ease-in-out;
         }
 
         a {
@@ -74,6 +84,11 @@ ul {
             text-align: center;
             font-size: var(--font-size-xs);
             text-shadow: 1px 1px 1px #252525;
+            padding: 8px;
+
+            :hover {
+                background-color: transparent;
+            }
         }
     }
 }
