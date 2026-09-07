@@ -32,10 +32,9 @@ html {
 
 body {
     height: 100dvh;
-
     background-image: url('./src/lib/assets/BG.webp');
     background-size: cover;
-    background-attachment: fixed;
+    
     cursor: url("./src/lib/assets/arrow.png"), default;
 }
 
@@ -64,7 +63,7 @@ ul {
         }
 
         :hover p {
-            text-shadow: 1.5px 1.5px 1.5px #000000;
+            text-shadow: 1.5px 1.5px 1.5px #1b1b1b;
         }
 
         :hover img {
