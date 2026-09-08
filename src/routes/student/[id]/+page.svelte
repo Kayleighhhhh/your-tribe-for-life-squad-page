@@ -3,6 +3,10 @@
 	let { data } = $props()
 </script>
 
+<svelte:head>
+	<title>{data.person.name.split(' ')[0]}</title>
+</svelte:head>
+
 <main class="detail-page">
     <p>[{data.person.name}]</p>
     <a href="/">
