@@ -72,7 +72,7 @@
         {#if person.fav_color === null}
             <dd>Not defined yet</dd>
             {:else}
-            <dd style="color: {person.fav_color};">{person.fav_color}</dd>
+            <dd style="--fav-color: {person.fav_color};" class="favorite-color"><span>{person.fav_color}</span></dd>
         {/if}
 
         <dt>Favorite animal</dt>
