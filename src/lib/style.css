@@ -16,8 +16,11 @@ html {
     /* Colors */
     --primary-color: #245CDA;
     --secondary-color: #41A241;
+    --lightest-text-color: #FFFFFF;
     --text-color: #E3E3E3;
+    --light-background-color: #ece9d8;
     --accent-color: #FF5555;
+    --background-gradient-color: linear-gradient(180deg, #0a246a 0%, #3169c6 8%, #588bec 20%, #4a7ee6 30%, #2a5cd6 50%, #1941a5 80%, #0a246a 100%);
 
     /* Font sizes */
     --font-size-xl: 1.5rem;
