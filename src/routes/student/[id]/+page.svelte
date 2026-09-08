@@ -1,65 +1,92 @@
 <script>
     // Receive the "data" prop from the load function ({ person })
 	let { data } = $props()
+    let { person } = data
 </script>
 
-<main class="detail-page">
-    <p>[{data.person.name}]</p>
-    <a href="/">
-        <svg width="20" viewBox="0 0 603 600"xmlns="http://www.w3.org/2000/svg">
-            <title>Go back to homepage</title>
-            <rect width="603" height="600" rx="50"/>
-            <path d="M177 175L426.642 424.642M426.642 175L177 424.642" stroke="white" stroke-width="70"/>
-        </svg>
-    </a>
+<article>
+    <header>
+        <h2>[{person.name}]</h2>
+        <a href="/" class="nav-bar-icon">
+            <img src="../src/lib/assets/minimize-xp-icon.png" alt="Go back to homepage">
+        </a>
 
-    <section>
+        <a href="/" class="nav-bar-icon">
+            <img src="../src/lib/assets/close-xp-icon.png" alt="Close and go back to homepage">
+        </a>
+    </header>
+
+    <figure>
         <picture>
-            {#if data.person.mugshot === null}
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Black_question_mark.png?utm_source=nl.wikipedia.org&utm_campaign=index&utm_content=original"width="100" height="100" alt="">
+
+            {#if person.mugshot != null}
+                <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=avif" type="image/avif">
+                <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=webp" type="image/webp">
+                <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=800" width="200" height="133" alt="Mugshot of {person.name}">
+
                 {:else}
-                <source srcset="https://fdnd.directus.app/assets/{data.person.mugshot}?width=800&format=avif" type="image/avif">
-                <source srcset="https://fdnd.directus.app/assets/{data.person.mugshot}?width=800&format=webp" type="image/webp">
-                <img loading="lazy" src="https://fdnd.directus.app/assets/{data.person.mugshot}?width=800" width="100" height="100" alt="Mugshot of {data.person.name}">
+                <img src="../src/lib/assets/unknown.webp" width="200" height="200" alt="Placeholder of a questionmark">
             {/if}
         </picture>
+        <figcaption>[{person.name}]</figcaption>
+    </figure>
 
-        <h1>[{data.person.name}]</h1>
-        <dl>
-            <dt>Birthdate</dt>
-            {#if data.person.birthdate === null}
-                <dd>Not defined yet</dd>
-                {:else}
-                <dd>{data.person.birthdate}</dd>
-            {/if}
+    <dl>
+        <dt>Nickname</dt>
+        {#if person.nickname === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.nickname}</dd>
+        {/if}
 
-            <dt>Favorite hobby</dt>
-            {#if data.person.fav_hobby === null}
-                <dd>Not defined yet</dd>
-                {:else}
-                <dd>{data.person.fav_hobby}</dd>
-            {/if}
+        <dt>Birthdate</dt>
+        {#if person.birthdate === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.birthdate}</dd>
+        {/if}
 
-            <dt>Favorite color</dt>
-            {#if data.person.fav_color === null}
-                <dd>Not defined yet</dd>
-                {:else}
-                <dd style="color: {data.person.fav_color};">{data.person.fav_color}</dd>
-            {/if}
+        <dt>Residency</dt>
+        {#if person.residency === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.residency}</dd>
+        {/if}
 
-            <dt>Favorite animal</dt>
-            {#if data.person.fav_animal === null}
-                <dd>Not defined yet</dd>
-                {:else}
-                <dd>{data.person.fav_animal}</dd>
-            {/if}
+        <dt>Github link</dt>
+        {#if person.github_handle === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd><a href="https://github.com/{person.github_handle}" target="_blank">@{person.github_handle}</a></dd>
+        {/if}
 
-            <dt>Favorite season</dt>
-            {#if data.person.fav_season === null}
-                <dd>Not defined yet</dd>
-                {:else}
-                <dd>{data.person.fav_season}</dd>
-            {/if}
-        </dl>
-    </section>
-</main>
+
+        <dt>Favorite hobby</dt>
+        {#if person.fav_hobby === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.fav_hobby}</dd>
+        {/if}
+
+        <dt>Favorite color</dt>
+        {#if person.fav_color === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd style="color: {person.fav_color};">{person.fav_color}</dd>
+        {/if}
+
+        <dt>Favorite animal</dt>
+        {#if person.fav_animal === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.fav_animal}</dd>
+        {/if}
+
+        <dt>Favorite season</dt>
+        {#if person.fav_season === null}
+            <dd>Not defined yet</dd>
+            {:else}
+            <dd>{person.fav_season}</dd>
+        {/if}
+    </dl>
+</article>
