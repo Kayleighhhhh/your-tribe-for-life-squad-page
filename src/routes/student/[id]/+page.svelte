@@ -8,11 +8,11 @@
     <header>
         <h2>[{person.name}]</h2>
         <a href="/" class="nav-bar-icon">
-            <img src="../src/lib/assets/minimize-xp-icon.png" alt="Go back to homepage">
+            <img src="../src/lib/assets/minimize-xp-icon.png" alt="Go back to homepage" width="50" height="50">
         </a>
 
         <a href="/" class="nav-bar-icon">
-            <img src="../src/lib/assets/close-xp-icon.png" alt="Close and go back to homepage">
+            <img src="../src/lib/assets/close-xp-icon.png" alt="Close and go back to homepage" width="50" height="50">
         </a>
     </header>
 
