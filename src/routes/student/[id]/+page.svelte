@@ -90,3 +90,170 @@
         {/if}
     </dl>
 </article>
+
+<style>
+
+    :root {
+        --card-width-margin: clamp(1em, 5dvw, 10em);
+    }
+
+    article {
+        margin-inline: auto;
+        margin-block: clamp(1em, 5dvw, 5em);
+        width: min(60em, 100dvw - 2 * var(--card-width-margin));
+        border-radius: var(--border-radius);
+        box-shadow: 2px 2px 10px 0px #434343a9;
+
+
+        @media (min-width:550px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 0.5em;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            background: var(--background-gradient-color);
+
+            @media (min-width:550px) {
+                grid-row: 1;
+                grid-column: 1/-1;
+            }
+        }
+
+        h2 {
+            color: var(--lightest-text-color);
+            font-size: var(--font-size-m);
+            font-weight: 500;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                margin-right: 0.5em;
+                background-image: url('../src/lib/assets/people-xp-icon.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                vertical-align: -0.5em;
+            }
+        }
+
+        .nav-bar-icon {
+            display: inline-flex;
+            transition: 0.05s ease;
+
+            @media (any-pointer: fine) {
+                &:hover, &:focus {
+                    scale: 0.95;
+                    filter: brightness(120%);
+                    box-shadow: 2px 2px 10px 0px #434343a9;
+                    translate: 0 2px;
+                }
+            }
+
+            &:active {
+                filter: brightness(80%);
+            }
+
+
+            &:first-of-type {
+                margin-left: auto;
+            }
+
+            img {
+                aspect-ratio: 1;
+                height: 1.8em;
+                width: auto;
+                padding: 0.01em;
+            }
+        }
+
+        figure,
+        dl {
+            background-color: var(--light-background-color);
+            padding: clamp(0.5em, 2dvw, 1em);
+            border: 0.5em solid rgb(0, 0, 134);
+            border-top: none;
+            border-bottom: none;
+        }
+
+        figure {
+
+            @media (min-width:550px) {
+                border-bottom: 0.5em solid rgb(0, 0, 134);
+                border-right: none;
+            }
+            
+            img {
+                aspect-ratio: 1;
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            figcaption {
+                font-size: var(--font-size-xl);
+                font-weight: 700;
+            }
+        }
+
+        dl {
+            border-bottom: 0.5em solid rgb(0, 0, 134);
+
+            @media (min-width:550px) {
+                border-left: none;
+            }
+
+            a {
+                color: #0000EE;
+
+                &:hover {
+                    color: #FF6600;
+                }
+
+                &:active {
+                    color: #FF0000;
+                }
+            }
+
+            dt {
+                font-size: var(--font-size-m);
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 0.8em;
+                    height: 0.8em;
+                    margin-right: 0.2em;
+                    background-image: url('../src/lib/assets/minus-xp-icon.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+
+            dd {
+                padding: 0 0 0.5em 0.2em;
+                &::before {
+                    content: '└';
+                    margin-right: 0.5em;
+                    color: #808080;
+                }
+            }
+
+            .favorite-color span {
+                display: inline-block;
+                color: var(--fav-color);
+                padding: 1px;
+                background-color: var(--fav-color);
+                border: 1px solid;
+                border-color: #716F64 #F1EFEA #F1EFEA #716F64; 
+                box-shadow: 1px 1px 1px var(--lightest-text-color) inset,-1px -1px 0 black inset;
+            }
+        }
+    }
+</style>
