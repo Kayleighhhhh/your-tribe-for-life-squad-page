@@ -93,6 +93,10 @@
 
 <style>
 
+    @font-face {
+        font-family: 'Pixelated';
+        src: url('../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2') format('woff2');
+    }
     :root {
         --card-width-margin: clamp(1em, 5dvw, 10em);
     }
@@ -196,6 +200,7 @@
             }
 
             figcaption {
+                font-family: 'Pixelated', Verdana, Geneva, Tahoma, sans-serif;
                 font-size: var(--font-size-xl);
                 font-weight: 700;
             }
@@ -203,6 +208,8 @@
 
         dl {
             border-bottom: 0.5em solid rgb(0, 0, 134);
+            font-family: 'Pixelated', Verdana, Geneva, Tahoma, sans-serif;
+            letter-spacing: 1px;
 
             @media (min-width:550px) {
                 border-left: none;
