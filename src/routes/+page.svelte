@@ -17,7 +17,7 @@
                     src={person.mugshot
                         ? `https://fdnd.directus.app/assets/${person.mugshot}?width=200`
                         : '../src/lib/assets/unknown.webp'}
-                    alt="{firstName}"
+                    alt="Mugshot of {firstName}"
                     width="65"
                     height="65"
                 />
