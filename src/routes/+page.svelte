@@ -8,6 +8,25 @@
 
 <h1>Squad 2G</h1>
 
-{#each data.squad as person}
- <li><a href="/student/{person.id}">{person.name}</a></li>
-{/each}
+<ul>
+    {#each data.squad as person}
+        {@const firstName = person.name.split(' ')[0]}
+        <li>
+            <a href="/student/{person.id}">
+                <img
+                    src={person.mugshot
+                        ? `https://fdnd.directus.app/assets/${person.mugshot}?width=200`
+                        : '../src/lib/assets/unknown.webp'}
+                    alt="Mugshot of {firstName}"
+                    width="65"
+                    height="65"
+                />
+                <p>{firstName}</p>
+            </a>
+        </li>
+    {/each}
+</ul>
+
+<nav>
+    <!-- Hier komt de taakbalk -->
+</nav>
