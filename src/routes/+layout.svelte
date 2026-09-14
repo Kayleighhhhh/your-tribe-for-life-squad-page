@@ -14,7 +14,11 @@
 <footer>
 	<nav>
 		<div class="logo">
-			<img src="../src/lib/assets/WindowsXP.png" alt="WindowsXP logo" />
+			<picture>
+				<source srcset="../src/lib/assets/WindowsXP.avif" type="image/avif" />
+				<source srcset="../src/lib/assets/WindowsXP.webp" type="image/webp" />
+				<img src="../src/lib/assets/WindowsXP.png" alt="WindowsXP logo" />
+			</picture>
 			<h1>Squad 2G</h1>
 		</div>
 	</nav>
