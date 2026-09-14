@@ -31,7 +31,6 @@ html {
 }
 
 body {
-    min-height: 100dvh;
     background-image: url('../src/lib/assets/BG.webp');
     background-size: cover;
     background-repeat: no-repeat;
