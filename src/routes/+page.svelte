@@ -6,8 +6,6 @@
 	<title>Squad page 2G</title>
 </svelte:head>
 
-<h1>Squad 2G</h1>
-
 <ul>
     {#each data.squad as person}
         {@const firstName = person.name.split(' ')[0]}
@@ -27,6 +25,3 @@
     {/each}
 </ul>
 
-<nav>
-    <!-- Hier komt de taakbalk -->
-</nav>

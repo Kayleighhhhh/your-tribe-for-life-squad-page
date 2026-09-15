@@ -34,14 +34,13 @@ html {
 }
 
 body {
-    min-height: 100dvh;
-    background-image: url('./src/lib/assets/BG.webp');
+    background-image: url('../src/lib/assets/BG.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     
-    cursor: url("./src/lib/assets/arrow.png"), default;
+    cursor: url("../src/lib/assets/arrow.png"), default;
 }
 
 ul {
@@ -64,7 +63,7 @@ ul {
         justify-content: center;
 
         :hover {
-            cursor: url("./src/lib/assets/link.png") 4 0, pointer;
+            cursor: url("../src/lib/assets/link.png") 4 0, pointer;
             background-color: rgba(0, 157, 255, 0.4);
         }
 
@@ -98,9 +97,47 @@ ul {
     }
 }
 
-nav {
+footer {
+    position: fixed;
     width: 100%;
-    height: var(--taskbar-height);
-    background-color: var(--primary-color);
-    --border-radius: 5px;
+    bottom: 0;
+
+    nav {
+        width: 100%;
+        height: var(--taskbar-height);
+        /* background: var(--background-gradient-color); */
+        background: linear-gradient(180deg, #0a246a 0%, #3169c6 8%, #588bec 20%, #4a7ee6 30%, #2a5cd6 50%, #1941a5 80%, #0a246a 100%);
+        --border-radius: 5px;
+        display: flex;
+
+        .logo {
+            background: var(--secondary-color);
+            background: linear-gradient(0deg, rgba(65, 162, 65, 1) 28%, rgba(93, 227, 93, 1) 59%, rgba(110, 255, 110, 1) 79%, rgba(117, 255, 117, 1) 89%, rgba(65, 162, 65, 1) 100%);
+            display: flex;
+            border-bottom-right-radius: 2em;
+            border-top-right-radius: 2em;
+
+            img {
+                width: 50px;
+                padding: .5em;
+            }
+
+            h1 {
+                font-family: inter;
+                font-style: italic;
+                color: var(--text-color);
+                text-shadow: 1px 1px 1px #252525;
+                font-size: var(--font-size-m);
+                align-content: center;
+                padding: .5em 1em;
+
+                @media (min-width: 15rem) {
+                    font-size: var(--font-size-l);
+
+                }
+
+            }
+        }
+    }
 }
+
