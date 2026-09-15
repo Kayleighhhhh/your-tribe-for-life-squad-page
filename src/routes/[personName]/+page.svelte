@@ -103,7 +103,7 @@
 
     article {
         margin-inline: auto;
-        margin-block: clamp(1em, 5dvw, 5em);
+        margin-block: 2em 5em;
         width: min(60em, 100dvw - 2 * var(--card-width-margin));
         border-radius: var(--border-radius);
         box-shadow: 2px 2px 10px 0px #434343a9;
@@ -112,6 +112,7 @@
         @media (min-width:550px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin-block: clamp(1em, 5dvw, 5em);
         }
 
         header {
