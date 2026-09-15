@@ -1,7 +1,7 @@
 <script>
     // Receive the "data" prop from the load function ({ person })
 	let { data } = $props()
-    let { person } = $derived(data.person)
+    let { person } = $derived(data)
 </script>
 
 <article>
