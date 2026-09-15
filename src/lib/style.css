@@ -54,6 +54,19 @@ ul {
     grid-auto-columns: minmax(4em, 1fr);
     gap: .75rem;
 
+    @media (max-width: 599px) {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: none;
+
+        li {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
     @media (min-width: 600px) {
         max-width: 500px;
     }
