@@ -10,7 +10,7 @@
     {#each data.squad as person}
         {@const firstName = person.name.split(' ')[0]}
         <li>
-            <a href="/student/{person.id}">
+            <a href="/{firstName}">
                 <img
                     src={person.mugshot
                         ? `https://fdnd.directus.app/assets/${person.mugshot}?width=200`
