@@ -1,7 +1,8 @@
 <script>
 	import favicon from '$lib/assets/WindowsXP.png';
 	import '$lib/style.css'
-	
+	import { page } from '$app/stores';
+
 	let { children } = $props();
 </script>
 
@@ -21,5 +22,12 @@
 			</picture>
 			<h1>Squad 2G</h1>
 		</div>
+		{#if $page.data.person}
+		<section>
+			<h2>
+				{$page.data.person.name}
+			</h2>
+		</section>
+		{/if}
 	</nav>
 </footer>
