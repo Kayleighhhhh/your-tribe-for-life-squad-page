@@ -143,7 +143,7 @@ footer {
             display: none;
 
             @media (min-width: 400px) {
-
+                display: unset;
                 background-color: #348AF1;
                 margin: .5em;
                 box-shadow: 1px 1px 6px rgba(28, 29, 33, 0.7);
