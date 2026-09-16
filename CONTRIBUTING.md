@@ -35,3 +35,43 @@
 <br>
 
 <img width="2378" height="1682" alt="Team Canvas" src="https://github.com/user-attachments/assets/a330a6d8-23c8-4751-99c4-f6b0bbcba536" />
+
+***
+
+# Opleverlijst
+
+- [ ] LEARNINGS.md
+
+## Readme
+- [ ] Inhoudsopgave
+- [ ] Live link
+- [ ] Installatie instructies
+- [ ] Beschrijving van de site
+- [ ] Mockups van de site
+- [ ] Gebruik van de site
+- [ ] Bronnen
+- [ ] Designkeuzes
+- [ ] Kenmerken van de site (code)
+- [ ] Link naar code conventies
+- [ ] Link naar CONTRIBUTING.MD
+
+## Website
+- [ ] Dod's van de leertaak
+- [ ] RAPPE principes gechecked
+- [ ] Geen onnodige code gecomment
+- [ ] Refactoring (bijv. DRY)
+- [ ] Figma design met een styleguide
+- [ ] Geen open pull requests
+- [ ] Ingewikkelde code hebben code comments
+- [ ] JSDocs voor documentatie (nog niet verplicht)
+- [ ] Branches deleten die gemerged zijn
+- [ ] Halfafgemaakte taken, in issue beschrijven wat er nog afgemaakt aan moet worden en terug op de backlog. Branch mag blijven bestaan. 
+
+## Projectboard
+- [ ] Nette label gebruik
+- [ ] Backlog, Epics, user stories, taken
+- [ ] Er zijn estimates
+- [ ] Issues zijn gesloten
+- [ ] Geen issues in progress en in review
+- [ ] Issues in de juiste kolommen
+
