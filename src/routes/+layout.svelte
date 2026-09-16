@@ -25,7 +25,7 @@
 		{#if $page.data.person}
 		<section>
 			<h2>
-				{$page.data.person.name}
+				{$page.data.person.name.split(' ')[0]}
 			</h2>
 		</section>
 		{/if}
