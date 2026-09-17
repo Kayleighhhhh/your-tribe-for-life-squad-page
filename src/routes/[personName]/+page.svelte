@@ -1,33 +1,56 @@
 <script>
     // Receive the "data" prop from the load function ({ person })
-	let { data } = $props()
-    let { person } = $derived(data)
+    let { data } = $props();
+    let { person } = $derived(data);
 </script>
 
 <svelte:head>
-	<title>{person.name}</title>
+    <title>{person.name}</title>
 </svelte:head>
 
 <article>
     <header>
         <h1>[{person.name}]</h1>
         <a href="/" class="nav-bar-icon">
-            <img src="../src/lib/assets/minimize-xp-icon.png" alt="Go back to homepage" width="50" height="50">
+            <img
+                src="../src/lib/assets/minimize-xp-icon.png"
+                alt="Go back to homepage"
+                width="50"
+                height="50"
+            />
         </a>
 
         <a href="/" class="nav-bar-icon">
-            <img src="../src/lib/assets/close-xp-icon.png" alt="Close and go back to homepage" width="50" height="50">
+            <img
+                src="../src/lib/assets/close-xp-icon.png"
+                alt="Close and go back to homepage"
+                width="50"
+                height="50"
+            />
         </a>
     </header>
 
     <figure>
         <picture>
             {#if person.mugshot != null}
-                <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=avif" type="image/avif">
-                <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=800" width="200" height="133" alt="">
-
-                {:else}
-                <img src="../src/lib/assets/unknown.avif" width="200" height="200" alt="">
+                <source
+                    srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=avif"
+                    type="image/avif"
+                />
+                <img
+                    loading="lazy"
+                    src="https://fdnd.directus.app/assets/{person.mugshot}?width=800"
+                    width="200"
+                    height="133"
+                    alt=""
+                />
+            {:else}
+                <img
+                    src="../src/lib/assets/unknown.avif"
+                    width="200"
+                    height="200"
+                    alt=""
+                />
             {/if}
         </picture>
         <figcaption>[{person.name}]</figcaption>
@@ -37,67 +60,73 @@
         <dt>Nickname</dt>
         {#if person.nickname === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.nickname}</dd>
         {/if}
 
         <dt>Birthdate</dt>
         {#if person.birthdate === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.birthdate}</dd>
         {/if}
 
         <dt>Residency</dt>
         {#if person.residency === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.residency}</dd>
         {/if}
 
         <dt>Github link</dt>
         {#if person.github_handle === null}
             <dd>Not defined yet</dd>
-            {:else}
-            <dd><a href="https://github.com/{person.github_handle}" target="_blank">@{person.github_handle}</a></dd>
+        {:else}
+            <dd>
+                <a
+                    href="https://github.com/{person.github_handle}"
+                    target="_blank">@{person.github_handle}</a
+                >
+            </dd>
         {/if}
-
 
         <dt>Favorite hobby</dt>
         {#if person.fav_hobby === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.fav_hobby}</dd>
         {/if}
 
         <dt>Favorite color</dt>
         {#if person.fav_color === null}
             <dd>Not defined yet</dd>
-            {:else}
-            <dd style="--fav-color: {person.fav_color};" class="favorite-color"><span>{person.fav_color}</span></dd>
+        {:else}
+            <dd style="--fav-color: {person.fav_color};" class="favorite-color">
+                <span>{person.fav_color}</span>
+            </dd>
         {/if}
 
         <dt>Favorite animal</dt>
         {#if person.fav_animal === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.fav_animal}</dd>
         {/if}
 
         <dt>Favorite season</dt>
         {#if person.fav_season === null}
             <dd>Not defined yet</dd>
-            {:else}
+        {:else}
             <dd>{person.fav_season}</dd>
         {/if}
     </dl>
 </article>
 
 <style>
-
     @font-face {
-        font-family: 'Pixelated';
-        src: url('../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2') format('woff2');
+        font-family: "Pixelated";
+        src: url("../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2")
+            format("woff2");
     }
     :root {
         --card-width-margin: clamp(1em, 5dvw, 10em);
@@ -110,8 +139,7 @@
         border-radius: var(--border-radius);
         box-shadow: 2px 2px 10px 0px #434343a9;
 
-
-        @media (min-width:550px) {
+        @media (min-width: 550px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin-block: clamp(1em, 5dvw, 5em);
@@ -124,7 +152,7 @@
             border-radius: var(--border-radius) var(--border-radius) 0 0;
             background: var(--background-gradient-color);
 
-            @media (min-width:550px) {
+            @media (min-width: 550px) {
                 grid-row: 1;
                 grid-column: 1/-1;
             }
@@ -136,12 +164,12 @@
             font-weight: 500;
 
             &::before {
-                content: '';
+                content: "";
                 display: inline-block;
                 width: 2em;
                 height: 2em;
                 margin-right: 0.5em;
-                background-image: url('../src/lib/assets/people-xp-icon.png');
+                background-image: url("../src/lib/assets/people-xp-icon.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -154,7 +182,8 @@
             transition: 0.05s ease;
 
             @media (any-pointer: fine) {
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     scale: 0.95;
                     filter: brightness(120%);
                     box-shadow: 2px 2px 10px 0px #434343a9;
@@ -165,7 +194,6 @@
             &:active {
                 filter: brightness(80%);
             }
-
 
             &:first-of-type {
                 margin-left: auto;
@@ -189,12 +217,11 @@
         }
 
         figure {
-
-            @media (min-width:550px) {
+            @media (min-width: 550px) {
                 border-bottom: 0.5em solid rgb(0, 0, 134);
                 border-right: none;
             }
-            
+
             img {
                 aspect-ratio: 1;
                 object-fit: cover;
@@ -203,7 +230,7 @@
             }
 
             figcaption {
-                font-family: 'Pixelated', Verdana, Geneva, Tahoma, sans-serif;
+                font-family: "Pixelated", Verdana, Geneva, Tahoma, sans-serif;
                 font-size: var(--font-size-xl);
                 font-weight: 700;
             }
@@ -211,22 +238,22 @@
 
         dl {
             border-bottom: 0.5em solid rgb(0, 0, 134);
-            font-family: 'Pixelated', Verdana, Geneva, Tahoma, sans-serif;
+            font-family: "Pixelated", Verdana, Geneva, Tahoma, sans-serif;
             letter-spacing: 1px;
 
-            @media (min-width:550px) {
+            @media (min-width: 550px) {
                 border-left: none;
             }
 
             a {
-                color: #0000EE;
+                color: #0000ee;
 
                 &:hover {
-                    color: #FF6600;
+                    color: #ff6600;
                 }
 
                 &:active {
-                    color: #FF0000;
+                    color: #ff0000;
                 }
             }
 
@@ -234,12 +261,12 @@
                 font-size: var(--font-size-m);
 
                 &::before {
-                    content: '';
+                    content: "";
                     display: inline-block;
                     width: 0.8em;
                     height: 0.8em;
                     margin-right: 0.2em;
-                    background-image: url('../src/lib/assets/minus-xp-icon.png');
+                    background-image: url("../src/lib/assets/minus-xp-icon.png");
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -249,7 +276,7 @@
             dd {
                 padding: 0 0 0.5em 0.2em;
                 &::before {
-                    content: '└';
+                    content: "└";
                     margin-right: 0.5em;
                     color: #808080;
                 }
@@ -261,8 +288,10 @@
                 padding: 1px;
                 background-color: var(--fav-color);
                 border: 1px solid;
-                border-color: #716F64 #F1EFEA #F1EFEA #716F64; 
-                box-shadow: 1px 1px 1px var(--lightest-text-color) inset,-1px -1px 0 black inset;
+                border-color: #716f64 #f1efea #f1efea #716f64;
+                box-shadow:
+                    1px 1px 1px var(--lightest-text-color) inset,
+                    -1px -1px 0 black inset;
             }
         }
     }
