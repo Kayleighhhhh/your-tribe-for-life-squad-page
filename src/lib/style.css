@@ -123,7 +123,6 @@ footer {
     nav {
         width: 100%;
         height: var(--taskbar-height);
-        /* background: var(--background-gradient-color); */
         background: linear-gradient(180deg, #0a246a 0%, #3169c6 8%, #588bec 20%, #4a7ee6 30%, #2a5cd6 50%, #1941a5 80%, #0a246a 100%);
         --border-radius: 5px;
         display: flex;
@@ -140,14 +139,16 @@ footer {
                 padding: .5em;
             }
 
-            h1, h2 {
+            h1,
+            h2 {
                 font-family: inter;
                 font-style: italic;
                 color: var(--text-color);
                 text-shadow: 1px 1px 1px #252525;
                 font-size: var(--font-size-m);
                 align-content: center;
-                padding: .5em 1em 0.5em 0;;
+                padding: .5em 1em 0.5em 0;
+                ;
 
                 @media (min-width: 15rem) {
                     font-size: var(--font-size-l);
