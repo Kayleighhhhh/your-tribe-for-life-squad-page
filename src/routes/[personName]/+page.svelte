@@ -20,7 +20,6 @@
         <picture>
             {#if person.mugshot != null}
                 <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=avif" type="image/avif">
-                <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=800&format=webp" type="image/webp">
                 <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=800" width="200" height="133" alt="Mugshot of {person.name}">
 
                 {:else}
