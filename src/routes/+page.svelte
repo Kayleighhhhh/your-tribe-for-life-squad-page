@@ -14,10 +14,10 @@
                 <picture>
                     {#if person.mugshot != null}
                         <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=200&format=avif" type="image/avif">
-                        <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=200" width="65" height="65" alt="Mugshot of {person.name}">
+                        <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=200" width="65" height="65" alt="">
 
                         {:else}
-                        <img src="../src/lib/assets/unknown.avif" width="65" height="65" alt="Placeholder of a questionmark">
+                        <img src="../src/lib/assets/unknown.avif" width="65" height="65" alt="">
                     {/if}
                 </picture>
                 <p>{firstName}</p>
