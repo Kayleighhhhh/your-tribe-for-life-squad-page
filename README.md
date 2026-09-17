@@ -1,5 +1,5 @@
 # Your Tribe for Life Squad Page
-In sprint 13 hebben we de opdracht gekregen een Squad Page te maken met SvelteKit, HTML, CSS en JS. Daarnaast gebruiken we data uit de [FDND Directus database](https://fdnd.directus.app/items/person/?filter[squads][squad_id][name]=2G&sort=name). 
+In sprint 13 hebben we de opdracht gekregen een Squad Page te maken met SvelteKit, HTML, CSS en JS. Daarnaast gebruiken we data uit de [FDND Directus database](https://fdnd.directus.app/items/person/?filter[squads][squad_id][name]=2G&sort=name). Ons team bestaat uit [Tom](https://github.com/tzgaming), [Sieuwke](https://github.com/sieuwkesheta) en [Kayleigh](https://github.com/Kayleighhhhh).
 
 ## Inhoudsopgave
 - [Beschrijving](#beschrijving)
@@ -49,6 +49,8 @@ Stap 2) Fork deze repository, clone deze op jouw computer en open het in VSCodiu
 Stap 3) Open de Terminal in VSCodium, Voer in de terminal het commando `npm install` en `npm install -D @sveltejs/adapter-netlify` uit door het in te typen en op enter te drukken.
 
 tap 5) Na de installatie is de map node_modules aangemaakt, en gevuld met allerlei packages. Start de website door in de terminal het commando `npm run dev`. Als het goed is, komt hier een melding te staan over het opstarten van de server. Open deze URL in je browser.
+
+We hebben richtlijnen opgezet voor werken aan dit project in de [CONTRIBUTING.MD](https://github.com/Kayleighhhhh/your-tribe-for-life-squad-page/blob/main/CONTRIBUTING.md).
 
 ## Bronnen
 - [Sveltekit Docs @ Svelte.dev](https://svelte.dev/docs/kit/introduction)
