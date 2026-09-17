@@ -4,9 +4,13 @@
     let { person } = $derived(data)
 </script>
 
+<svelte:head>
+	<title>{person.name}</title>
+</svelte:head>
+
 <article>
     <header>
-        <h2>[{person.name}]</h2>
+        <h1>[{person.name}]</h1>
         <a href="/" class="nav-bar-icon">
             <img src="../src/lib/assets/minimize-xp-icon.png" alt="Go back to homepage" width="50" height="50">
         </a>
@@ -126,7 +130,7 @@
             }
         }
 
-        h2 {
+        h1 {
             color: var(--lightest-text-color);
             font-size: var(--font-size-m);
             font-weight: 500;
