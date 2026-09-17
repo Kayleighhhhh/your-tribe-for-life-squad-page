@@ -129,7 +129,7 @@ footer {
                 text-shadow: 1px 1px 1px #252525;
                 font-size: var(--font-size-m);
                 align-content: center;
-                padding: .5em 1em;
+                padding: .5em 1em 0.5em 0;;
 
                 @media (min-width: 15rem) {
                     font-size: var(--font-size-l);
@@ -142,7 +142,7 @@ footer {
         section {
             display: none;
 
-            @media (min-width: 400px) {
+            @media (min-width: 360px) {
                 display: unset;
                 background-color: #348AF1;
                 margin: .5em;
