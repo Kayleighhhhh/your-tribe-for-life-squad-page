@@ -40,38 +40,38 @@
 
 # Opleverlijst
 
-- [ ] LEARNINGS.md
+- [x] LEARNINGS.md
 
 ## Readme
-- [ ] Inhoudsopgave
-- [ ] Live link
-- [ ] Installatie instructies
-- [ ] Beschrijving van de site
-- [ ] Mockups van de site
-- [ ] Gebruik van de site
-- [ ] Bronnen
-- [ ] Designkeuzes
-- [ ] Kenmerken van de site (code)
-- [ ] Link naar code conventies
-- [ ] Link naar CONTRIBUTING.MD
+- [x] Inhoudsopgave
+- [x] Live link
+- [x] Installatie instructies
+- [x] Beschrijving van de site
+- [x] Mockups van de site
+- [x] Gebruik van de site
+- [x] Bronnen
+- [x] Designkeuzes
+- [x] Kenmerken van de site (code)
+- [x] Link naar code conventies
+- [x] Link naar CONTRIBUTING.MD
 
 ## Website
-- [ ] Dod's van de leertaak
-- [ ] RAPPE principes gechecked
-- [ ] Geen onnodige code gecomment
-- [ ] Refactoring (bijv. DRY)
-- [ ] Figma design met een styleguide
-- [ ] Geen open pull requests
-- [ ] Ingewikkelde code hebben code comments
+- [x] Dod's van de leertaak
+- [x] RAPPE principes gechecked
+- [x] Geen onnodige code gecomment
+- [x] Refactoring (bijv. DRY)
+- [x] Figma design met een styleguide
+- [x] Geen open pull requests
+- [x] Ingewikkelde code hebben code comments
 - [ ] JSDocs voor documentatie (nog niet verplicht)
-- [ ] Branches deleten die gemerged zijn
-- [ ] Halfafgemaakte taken, in issue beschrijven wat er nog afgemaakt aan moet worden en terug op de backlog. Branch mag blijven bestaan. 
+- [x] Branches deleten die gemerged zijn
+- [x] Halfafgemaakte taken, in issue beschrijven wat er nog afgemaakt aan moet worden en terug op de backlog. Branch mag blijven bestaan. 
 
 ## Projectboard
-- [ ] Nette label gebruik
-- [ ] Backlog, Epics, user stories, taken
-- [ ] Er zijn estimates
-- [ ] Issues zijn gesloten
-- [ ] Geen issues in progress en in review
-- [ ] Issues in de juiste kolommen
+- [x] Nette label gebruik
+- [x] Backlog, Epics, user stories, taken
+- [x] Er zijn estimates
+- [x] Issues zijn gesloten
+- [x] Geen issues in progress en in review
+- [x] Issues in de juiste kolommen
 
