@@ -60,9 +60,11 @@ ul {
         grid-template-rows: none;
 
         li {
-            img {
-                width: 90px;
-                height: 90px;
+            picture {
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
             }
         }
     }
