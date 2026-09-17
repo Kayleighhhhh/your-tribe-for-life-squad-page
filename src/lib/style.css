@@ -39,7 +39,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
+
     cursor: url("../src/lib/assets/arrow.png"), default;
 }
 
@@ -129,7 +129,7 @@ footer {
                 text-shadow: 1px 1px 1px #252525;
                 font-size: var(--font-size-m);
                 align-content: center;
-                padding: .5em 1em;
+                padding: .5em 1em 0.5em 0;;
 
                 @media (min-width: 15rem) {
                     font-size: var(--font-size-l);
@@ -138,6 +138,40 @@ footer {
 
             }
         }
+
+        section {
+            display: none;
+
+            @media (min-width: 360px) {
+                display: unset;
+                background-color: #348AF1;
+                margin: .5em;
+                box-shadow: 1px 1px 6px rgba(28, 29, 33, 0.7);
+                padding: 0 1em;
+                border-radius: .3em;
+
+                h2 {
+                    color: var(--lightest-text-color);
+                    font-size: var(--font-size-m);
+                    font-weight: 500;
+
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 1.75em;
+                        height: 1.75em;
+                        margin-right: 0.5em;
+                        background-image: url('../src/lib/assets/people-xp-icon.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        vertical-align: -0.5em;
+                    }
+                }
+
+            }
+
+
+        }
     }
 }
-
