@@ -11,14 +11,15 @@
         {@const firstName = person.name.split(' ')[0]}
         <li>
             <a href="/{firstName}">
-                <img
-                    src={person.mugshot
-                        ? `https://fdnd.directus.app/assets/${person.mugshot}?width=200`
-                        : '../src/lib/assets/unknown.webp'}
-                    alt="Mugshot of {firstName}"
-                    width="65"
-                    height="65"
-                />
+                <picture>
+                    {#if person.mugshot != null}
+                        <source srcset="https://fdnd.directus.app/assets/{person.mugshot}?width=200&format=avif" type="image/avif">
+                        <img loading="lazy" src="https://fdnd.directus.app/assets/{person.mugshot}?width=200" width="65" height="65" alt="">
+
+                        {:else}
+                        <img src="../src/lib/assets/unknown.avif" width="65" height="65" alt="">
+                    {/if}
+                </picture>
                 <p>{firstName}</p>
             </a>
         </li>

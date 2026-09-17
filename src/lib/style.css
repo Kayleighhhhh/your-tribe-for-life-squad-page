@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background-image: url('../src/lib/assets/BG.webp');
+    background-image: url('../src/lib/assets/BG.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,9 +60,11 @@ ul {
         grid-template-rows: none;
 
         li {
-            img {
-                width: 90px;
-                height: 90px;
+            picture {
+                img {
+                    width: 90px;
+                    height: 90px;
+                }
             }
         }
     }

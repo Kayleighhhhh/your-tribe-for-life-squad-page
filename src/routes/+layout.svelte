@@ -17,8 +17,7 @@
 		<div class="logo">
 			<picture>
 				<source srcset="../src/lib/assets/WindowsXP.avif" type="image/avif" />
-				<source srcset="../src/lib/assets/WindowsXP.webp" type="image/webp" />
-				<img src="../src/lib/assets/WindowsXP.png" alt="WindowsXP logo" />
+				<img src="../src/lib/assets/WindowsXP.png" alt="Windows XP" width="50" height="50" />
 			</picture>
 			<h1>Squad 2G</h1>
 		</div>
