@@ -128,7 +128,7 @@
 <style>
     @font-face {
         font-family: "Pixelated";
-        src: url("./assets/fonts/ms-sans-serif-1.otf.woff2")
+        src: url("../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2")
             format("woff2");
     }
     :root {
@@ -172,7 +172,7 @@
                 width: 2em;
                 height: 2em;
                 margin-right: 0.5em;
-                background-image: url("./assets/people-xp-icon.png");
+                background-image: url("../src/lib/assets/people-xp-icon.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -269,7 +269,7 @@
                     width: 0.8em;
                     height: 0.8em;
                     margin-right: 0.2em;
-                    background-image: url("./assets/minus-xp-icon.png");
+                    background-image: url("../src/lib/assets/minus-xp-icon.png");
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
