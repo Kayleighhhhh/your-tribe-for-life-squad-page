@@ -6,7 +6,7 @@
 
 @font-face {
         font-family: "Pixelated";
-        src: url("../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2")
+        src: url("./assets/fonts/ms-sans-serif-1.otf.woff2")
             format("woff2");
     }
 
