@@ -1,8 +1,5 @@
 <script>
     // Receive the "data" prop from the load function ({ person })
-    import close from '$lib/assets/close-xp-icon.png';
-    import minimize from '$lib/assets/minimize-xp-icon.png';
-    import question from '$lib/assets/unknown.avif';
     let { data } = $props();
     let { person } = $derived(data);
 </script>
@@ -16,7 +13,7 @@
         <h1>[{person.name}]</h1>
         <a href="/" class="nav-bar-icon">
             <img
-                src={minimize}
+                src="../src/lib/assets/minimize-xp-icon.png"
                 alt="Go back to homepage"
                 width="50"
                 height="50"
@@ -25,7 +22,7 @@
 
         <a href="/" class="nav-bar-icon">
             <img
-                src={close}
+                src="../src/lib/assets/close-xp-icon.png"
                 alt="Close and go back to homepage"
                 width="50"
                 height="50"
@@ -49,7 +46,7 @@
                 />
             {:else}
                 <img
-                    src={question}
+                    src="../src/lib/assets/unknown.avif"
                     width="200"
                     height="200"
                     alt=""
@@ -128,7 +125,7 @@
 <style>
     @font-face {
         font-family: "Pixelated";
-        src: url("./assets/fonts/ms-sans-serif-1.otf.woff2")
+        src: url("../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2")
             format("woff2");
     }
     :root {
@@ -172,7 +169,7 @@
                 width: 2em;
                 height: 2em;
                 margin-right: 0.5em;
-                background-image: url("./assets/people-xp-icon.png");
+                background-image: url("../src/lib/assets/people-xp-icon.png");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -269,7 +266,7 @@
                     width: 0.8em;
                     height: 0.8em;
                     margin-right: 0.2em;
-                    background-image: url("./assets/minus-xp-icon.png");
+                    background-image: url("../src/lib/assets/minus-xp-icon.png");
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
