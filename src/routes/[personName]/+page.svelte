@@ -4,6 +4,10 @@
     let { person } = $derived(data)
 </script>
 
+<svelte:head>
+	<title>{person.name}</title>
+</svelte:head>
+
 <article>
     <header>
         <h2>[{person.name}]</h2>
