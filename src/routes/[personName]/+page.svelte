@@ -4,6 +4,7 @@
     import minimize from '$lib/assets/minimize-xp-icon.png';
     import question from '$lib/assets/unknown.avif';
     import people from '$lib/assets/people-xp-icon.png';
+    import minusIcon from '$lib/assets/minus-xp-icon.png';
     let { data } = $props();
     let { person } = $derived(data);
 </script>
@@ -12,7 +13,7 @@
     <title>{person.name}</title>
 </svelte:head>
 
-<article>
+<article style="--minus-icon: url({minusIcon})">
     <header>
         <h1 style="--people-icon: url({people})">[{person.name}]</h1>
         <a href="/" class="nav-bar-icon">
@@ -270,7 +271,7 @@
                     width: 0.8em;
                     height: 0.8em;
                     margin-right: 0.2em;
-                    background-image: url("../src/lib/assets/minus-xp-icon.png");
+                    background-image: var(--minus-icon);
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
