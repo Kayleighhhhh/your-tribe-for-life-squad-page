@@ -128,11 +128,6 @@
 </article>
 
 <style>
-    @font-face {
-        font-family: "Pixelated";
-        src: url("../src/lib/assets/fonts/ms-sans-serif-1.otf.woff2")
-            format("woff2");
-    }
     :root {
         --card-width-margin: clamp(1em, 5dvw, 10em);
     }
