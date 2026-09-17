@@ -140,7 +140,7 @@ footer {
                 padding: .5em;
             }
 
-            h1 {
+            h1, h2 {
                 font-family: inter;
                 font-style: italic;
                 color: var(--text-color);
@@ -168,7 +168,7 @@ footer {
                 padding: 0 1em;
                 border-radius: .3em;
 
-                h2 {
+                p {
                     color: var(--lightest-text-color);
                     font-size: var(--font-size-m);
                     font-weight: 500;
