@@ -2,6 +2,8 @@
 	import favicon from "$lib/assets/WindowsXP.png";
 	import "$lib/style.css";
 	import { page } from "$app/state";
+	import XPavif from '$lib/assets/WindowsXP.avif';
+	import XP from '$lib/assets/WindowsXP.png';
 
 	// To check if you are on the homepage
 	const isHome = $derived(page.url.pathname === "/");
@@ -22,11 +24,11 @@
 		<div class="logo">
 			<picture>
 				<source
-					srcset="../src/lib/assets/WindowsXP.avif"
+					srcset={XPavif}
 					type="image/avif"
 				/>
 				<img
-					src="../src/lib/assets/WindowsXP.png"
+					src={XP}
 					alt="Windows XP"
 					width="50"
 					height="50"

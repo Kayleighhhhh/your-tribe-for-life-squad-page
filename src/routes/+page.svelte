@@ -1,4 +1,6 @@
 <script>
+    import question from '$lib/assets/unknown.avif';
+
     let { data } = $props();
 </script>
 
@@ -26,7 +28,7 @@
                         />
                     {:else}
                         <img
-                            src="../src/lib/assets/unknown.avif"
+                            src={question}
                             width="65"
                             height="65"
                             alt=""

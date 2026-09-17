@@ -34,13 +34,13 @@ html {
 }
 
 body {
-    background-image: url('../src/lib/assets/BG.avif');
+    background-image: url('./assets/BG.avif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 
-    cursor: url("../src/lib/assets/arrow.png"), default;
+    cursor: url("./assets/arrow.png"), default;
 }
 
 ul {
@@ -81,7 +81,7 @@ ul {
         justify-content: center;
 
         :hover {
-            cursor: url("../src/lib/assets/link.png") 4 0, pointer;
+            cursor: url("./assets/link.png") 4 0, pointer;
             background-color: rgba(0, 157, 255, 0.4);
         }
 
@@ -181,7 +181,7 @@ footer {
                         width: 1.75em;
                         height: 1.75em;
                         margin-right: 0.5em;
-                        background-image: url('../src/lib/assets/people-xp-icon.png');
+                        background-image: url('./assets/people-xp-icon.png');
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
