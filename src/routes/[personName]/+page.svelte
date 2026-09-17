@@ -14,7 +14,7 @@
 
 <article>
     <header>
-        <h1>[{person.name}]</h1>
+        <h1 style="--people-icon: url({people})">[{person.name}]</h1>
         <a href="/" class="nav-bar-icon">
             <img
                 src={minimize}
@@ -173,7 +173,7 @@
                 width: 2em;
                 height: 2em;
                 margin-right: 0.5em;
-                background-image: url({people});
+                background-image: var(--people-icon);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
