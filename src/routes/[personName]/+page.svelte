@@ -3,6 +3,7 @@
     import close from '$lib/assets/close-xp-icon.png';
     import minimize from '$lib/assets/minimize-xp-icon.png';
     import question from '$lib/assets/unknown.avif';
+    import people from '$lib/assets/people-xp-icon.png';
     let { data } = $props();
     let { person } = $derived(data);
 </script>
@@ -172,7 +173,7 @@
                 width: 2em;
                 height: 2em;
                 margin-right: 0.5em;
-                background-image: url("../src/lib/assets/people-xp-icon.png");
+                background-image: url({people});
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
